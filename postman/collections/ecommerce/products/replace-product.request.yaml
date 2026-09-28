@@ -1,0 +1,15 @@
+$kind: http-request
+name: Replace product
+method: PUT
+url: 'http://127.0.0.1:8000/api/products/{{productId}}/'
+order: 3000
+headers:
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "name": "Replacement product",
+      "price": 19.99
+    }

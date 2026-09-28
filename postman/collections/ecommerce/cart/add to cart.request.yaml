@@ -1,0 +1,11 @@
+$kind: http-request
+url: http://127.0.0.1:8000/api/cart/add/
+method: POST
+body:
+  type: json
+  content: ""
+auth:
+  type: bearer
+  credentials:
+    token: ""
+order: 2642019552438683

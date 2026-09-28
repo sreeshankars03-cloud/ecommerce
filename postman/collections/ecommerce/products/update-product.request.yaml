@@ -1,0 +1,14 @@
+$kind: http-request
+name: Update product
+method: PATCH
+url: 'http://127.0.0.1:8000/api/products/{{productId}}/'
+order: 4000
+headers:
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "price": 14.99
+    }
